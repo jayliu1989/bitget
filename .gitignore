@@ -1,0 +1,11 @@
+.idea
+/venv/
+/logs/*
+!/logs/index.html
+
+.env
+__pycache__
+__pycache__/*
+*/__pycache__
+*/__pycache__/*
+test/*
