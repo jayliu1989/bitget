@@ -3,7 +3,7 @@ from bitget.client import Client
 from bitget.consts import GET, POST
 
 
-class OrderApi(Client):
+class SpotOrderApi(Client):
     def __init__(self, api_key, api_secret_key, passphrase, use_server_time=False, first=False):
         Client.__init__(self, api_key, api_secret_key, passphrase, use_server_time, first)
 
