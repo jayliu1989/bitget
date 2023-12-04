@@ -1,7 +1,7 @@
-import bitget.v1.mix.order_api as maxOrderApi
 import bitget.bitget_api as baseApi
 
 from bitget.exceptions import BitgetAPIException
+from bitget.v2.spot.order_api import SpotOrderApi
 
 if __name__ == '__main__':
     apiKey = "your apiKey"
@@ -9,7 +9,7 @@ if __name__ == '__main__':
     passphrase = "your passphrase"
 
     # Demo 1:place order
-    maxOrderApi = maxOrderApi.OrderApi(apiKey, secretKey, passphrase)
+    maxOrderApi = SpotOrderApi(apiKey, secretKey, passphrase)
     try:
         params = {}
         params["symbol"] = "BTCUSDT_UMCBL"
